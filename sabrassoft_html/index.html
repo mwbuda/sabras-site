@@ -1,0 +1,114 @@
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabras Software LLC</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+<div class="row">
+      <div class="large-12 columns">
+      	<div id="main" class="callout panel">
+	        <h3>Sorry We&rsquo;re rebuilding, find out <a href="#" onclick="showHide('section-rebuild'); return false;">why ?</a> 
+</div>
+   
+<div class="row">
+      <div class="large-12 columns">
+        <h1 align="center"><img height="50%" width="50%" src="http://imgur.com/NBsW3hI.jpg"></img></h1>
+      </div>
+</div>
+
+<div class="row">
+      <div class="large-12 columns">
+<h1 align="center">
+<a id="contact-btn" href="#" onclick="showHide('section-contact'); return false;" class="round button">Contact Us</a>
+<a id="about-btn" href="#" onclick="showHide('section-about'); return false;" class="round button">About Sabras</a>
+<a id="rebuild-btn"href="#" onclick="showHide('section-rebuild'); return false;" class="round button">Rebuilding Why?</a>
+<h1>
+      </div>
+</div>
+    
+<div class="row">
+      <div class="large-12 columns">
+		<div id="section-contact" class="panel">
+<p>
+Contact Us<br/>
+Email: 
+<a href="mailto:contact@sabrassoft.com">
+contact@sabrassoft.com</a>
+<br/>
+</p>
+<p>
+Jason Duncan<br/>
+Owner / Chief Technologist (Primary)<br/>
+Phone: 
+<a href="tel:19376722052">937-672-2052
+</a><br/>
+Email:
+<a href="mailto:jduncan@sabrassoft.com">jduncan@sabrassoft.com</a><br/>
+</p>
+<p>
+Michael Buda<br/>
+Technologist / (Secondary)<br/>
+Email: 
+<a href="mailto:mbuda@sabrassoft.com">mbuda@sabrassoft.com
+</a><br/>
+</p>
+<p>
+Any other(s), please sent a general inquiry to <a href="mailto:contact@sabrassoft.com">Contact</a> or email <a href="mailto:jduncan@sabrassoft.com">Jason</a> or <a href="mailto:mbuda@sabrassoft.com">Michael</a> and they will make sure they follow up.
+</p>
+<p>
+Copyright Sabras Software LLC, 2015<br/>
+</p>
+		</div>
+	</div>
+</div>
+<div class="row">
+      <div class="large-12 columns">
+		<div id="section-about" class="panel">
+			<p>At Sabras Software LLC we provide project 				based and part time software development. Since 				our establishment in 2008 we have acquired 					experience in building or recreating software for 			customers from large Fortune 500 companies; as 				well as many small to medium businesses.</p>
+
+			<p>Those interested in working with Sabras 					Software LLC will find an environment in which 				the focus is on delivering a reliable and 					sustainable software project product to our 				customer. Our primary technology focus is on 				green field software development projects in 				progressive technologies. Employees will find 				coworkers with complimentary skill sets. We 				simply do not hire relationship managers, 					personnel managers, or those without a technical 				background. This focus on technology allows our 				communication to flow readily and 						collaboratively. Technology and people are only 				part of the equation. Sustainable and reliable 				software is the result when those factors are 				joined with business need.</p>
+
+			<p>Reaching the needs of our clients is pinnacle 				at Sabras. We attain this through achieving a 				thorough understanding of the business 					requirements of our partners/clients on their 				project and going to the extent to understand 				their needs- these needs are often not written 				into those requirements, but in fact inspired are 			by the project. It is by taking that extra step 				of listening to our clients we have gained the 				trust of our customers and partners. Our staff 				then combines this project perspective with their 			impressive technical skills to achieve a winning 				result for our clients.</p>
+
+			<p>At Sabras we place an incredible amount of 				value on software craftsmanship. All code is not 				created equally and we understand that fact. Our 				strict development methods and high skill levels 				result in excellent performance and 						maintainability for our clients. Awareness of 				schedules and client needs are never forgotten in 			our management process. We build most of our 				clientele from business references on our prior 				projects we attain as a result of those 					practices.</p>
+<p>
+Copyright Sabras Software LLC, 2015<br/>
+</p>
+		</div>
+	</div>
+</div>
+<div class="row">
+      <div class="large-12 columns">
+		<div id="section-rebuild" class="panel">
+			<p>Growing up my father was a Union Electrican and HVAC Service Engineer. He also "moonlighted" with a business partner for over a decade, and I joined most evenings and weekends. Thru him I learned to love the Sevice aspect of business and grew to love helping other when it really made a difference. It inspired, in part to start my own business that helped others.</p>
+<p>I also remember that we didn't have Central Air-Contitioning in our house until I was in my Teens even though I helped him and his partner install dozen (at a mimumum) of unit in other people's houses. So, as to do a little better than my contemporaries (and give me 1 more excuse to play with <a href="http://foundation.zurb.com/">Foundations by Zurb</a>) we're recreating our site as a responsive design site.</p>
+<p>Additionally, a good friend of the business came to us a little while ago with a very short deadline and asked us to help his real estate business <a href="http://trudorealty.com">TrudoRealty.com</a> migrate it's Search functionality away from Zillow Rental and onto <a href="http://RealtyMx.com">RealtyMx.com</a> in short notice (around 30 days total project time). We succeeded. But, to migigate risk I "recycled" my own marketing site hosted with <a href="http://asmallorange.com">A Small Orange</a> so that I could perform pre-release deploys of his new site to the company we both host our .com sites with. So, now seemed like a good time to rebuild.
+<p>
+Copyright Sabras Software LLC, 2015<br/>
+</p>
+		</div>
+	</div>
+</div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+     $(document).foundation();
+     $('#section-about').hide();
+     $('#section-rebuild').hide();
+
+	function showHide(id){
+		var x = document.getElementById(id);
+		// hide them all 		
+		$('[id^=section-]').hide();
+		// then show the one that was clicked
+		x.style.display = 'block';
+	}
+    </script>
+  </body>
+</html>
