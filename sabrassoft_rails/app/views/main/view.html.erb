@@ -1,0 +1,28 @@
+
+
+<%= pageRow('navbar') do %>
+	<h1 align="center">
+	<% @sections.each do |section| %>
+		<%= contentSectionShowHide("#{section.id}-btn", "section-#{section.id}", section.title, 'round button') %>
+	<% end %>
+	</h1>
+<% end %>
+  	
+<% @sections.each do |section| %>
+<%=  contentSection("section-#{section.id}") do %>
+	<%= render partial: "main/#{section.id}" %>
+<% end end %>
+
+<<script type="text/javascript">
+
+$('#section-about').hide();
+$('#section-rebuild').hide();
+
+function showHide(id){
+	var x = document.getElementById(id);
+	// hide them all 		
+	$('[id^=section-]').hide();
+	// then show the one that was clicked
+	x.style.display = 'block';
+}
+</script>

@@ -13,8 +13,17 @@
   </head>
 
   <body>
-
+  
+  	<%= pageRow do %>
+  		<!-- TODO: use local image asset file -->
+        <h1 align="center"><img height="50%" width="50%" src="http://imgur.com/NBsW3hI.jpg"></img></h1>
+  	<% end %>
+	
     <%= yield %>
+    
+    <%= pageRow do %>
+  		<h1 align="center"> &copy; Sabras Software LLC, 2015</h1>
+  	<% end %>
 
   </body>
 </html>
