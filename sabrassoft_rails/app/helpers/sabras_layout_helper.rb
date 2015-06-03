@@ -22,7 +22,7 @@ module SabrasLayoutHelper
 			:id => btnId,
 			:href => '#',
 			:class => cssClass,
-			:onclick => "showHide('#{contentId}'); return false;"
+			:onclick => "showHide('#{contentId}'); return false;".html_safe
 		}) 
 	end
 end

@@ -13,10 +13,7 @@
 	<%= render partial: "main/#{section.id}" %>
 <% end end %>
 
-<<script type="text/javascript">
-
-$('#section-about').hide();
-$('#section-rebuild').hide();
+<script type="text/javascript">
 
 function showHide(id){
 	var x = document.getElementById(id);
@@ -25,4 +22,9 @@ function showHide(id){
 	// then show the one that was clicked
 	x.style.display = 'block';
 }
+
+<% @sections.each do |section| next if section.id == :home %>
+	$('#section-<%= section.id %>').hide() ;
+<% end %>
+
 </script>
