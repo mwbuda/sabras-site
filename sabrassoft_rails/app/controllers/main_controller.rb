@@ -28,7 +28,7 @@ class MainController < ApplicationController
 	defineSection(:contact, 'Contact Us')
 	defineSection(:offerings, 'Products & Services')
 	defineSection(:careers, 'Careers')
-	defineSection(:testimonial, 'Testimonial')
+#	defineSection(:testimonial, 'Testimonial')
 	
 	def view
 		Rails.logger.debug(self.class.sections.size)
