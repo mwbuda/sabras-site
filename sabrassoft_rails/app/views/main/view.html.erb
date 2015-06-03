@@ -1,7 +1,7 @@
 
 
 <%= pageRow('navbar') do %>
-	<h1 align="center">
+	<h1 align="center" class="navbar">
 	<% @sections.each do |section| %>
 		<%= contentSectionShowHide("#{section.id}-btn", "section-#{section.id}", section.title, 'round button') %>
 	<% end %>

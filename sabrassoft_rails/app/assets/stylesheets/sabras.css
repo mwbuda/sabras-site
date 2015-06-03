@@ -6,12 +6,62 @@ h1.copyrightNotice {
 	color: lightslategray ;
 	font-size: smaller ;
 	font-family: monospace ;
-	
-	
+	text-decoration: none ;
+	font-weight: normal ;
 }
 
+h1.navbar {
+	text-decoration: none ;
+}
 
+h1 {
+	font-family: monospace ;
+	color: slategray ;
+	font-size: larger ;
+	font-style: italic ;
+	font-weight: bold ;
+	text-decoration: underline ;
+	text-decoration-color: slategray ;
+}
 
+h2 {
+	text-indent: 10px ;
+	font-family: monospace ;
+	color: lightslategray ;
+	font-size: medium ;
+	font-style: italic ;
+	font-weight: bold ;
+	text-decoration: underline ;
+	text-decoration-color: lightslategray ;
+}
+
+h3 {
+	text-indent: 10px ;
+	font-family: monospace ;
+	color: lightslategray ;
+	font-size: medium ;
+	font-style: italic ;
+	font-weight: normal ;
+	text-decoration: underline ;
+	text-decoration-color: lightslategray ;
+}
+
+div.section {
+	border-style: solid ;
+	border-width: 0.5px;
+	border-color: gainsboro silver silver gainsboro ;
+	padding: 2px 2px 2px 2px ;
+}
+
+div.subsection {
+	border-style: solid ;
+	border-width: 1px;
+	border-color: gainsboro;
+	margin-left: 10px ;
+	margin-right: 10px ;
+	margin-bottom: 8px ;
+	padding: 4px 6px 6px 4px ;
+}
 
 
 
