@@ -8,7 +8,7 @@ module SabrasLayoutHelper
 		opts = {:class => 'row'}
 		opts[:id] = id unless id.nil?
 		
-		content_tag(:div, content_tag(:div, capture(&rowContent)), opts)
+		content_tag(:div, content_tag(:div, capture(&rowContent), :class => 'large-12 columns'), opts)
 	end
 	
 	def contentSection(id, sectid = nil, &sectionContent)

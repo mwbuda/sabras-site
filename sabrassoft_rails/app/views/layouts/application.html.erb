@@ -17,15 +17,28 @@
   	<br />
   	<%= pageRow do %>
   		<!-- TODO: use local image asset file -->
-        <h1 align="center" class="unstyledHeader"><img height="50%" width="50%" src="http://imgur.com/NBsW3hI.jpg"></img></h1>
+        <h1 class="pageNotice">
+        	<img height="50%" width="50%" src="http://imgur.com/NBsW3hI.jpg"></img>
+        </h1>
   	<% end %>
   	<br />
   	<br />
+  	
+  	<%= pageRow do %>
+  		<div id="main" class="callout panel">
+			<h1 class="pageNotice">
+				We&rsquo;re currently rebuilding our website, as we take the company into a new direction. 
+				Pardon the caution tape &amp; please wear a hardhat!
+			</h1>
+		</div>
+  	<% end %>
+	<br />
+	<br />
 	
     <%= yield %>
     
     <%= pageRow do %>
-  		<h1 align="center" class="copyrightNotice"> &copy; Sabras Software LLC, 2015</h1>
+  		<h1 class="copyrightNotice"> &copy; Sabras Software LLC, 2015</h1>
   	<% end %>
 
   </body>
