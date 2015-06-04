@@ -1,7 +1,15 @@
 *.gem
+
 .metadata/**
 .project
 .buildpath
 .settings/**
 */.settings/**
+*/public/assets/**
 
+sandbox/**
+
+*.zip
+**/*.zip
+*.tar.gz
+**/*.tar.gz
